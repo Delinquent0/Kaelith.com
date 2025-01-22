@@ -1,0 +1,47 @@
+label[class="2"] {
+  content:"";
+  padding-top: 10%;
+  position: absolute;
+  left: -30%;
+  top: 10%;
+  transition: background-color 1s;
+  width: 40%;
+  height: 90%;
+  transition: 1s;
+  background-color: cyan;
+  z-index: -1;
+}
+
+input[type="checkbox"]:checked + label[class="2"] {
+  transform: translateX(70%);
+  background-color: black;
+}
+
+input[id="switch"]{
+  display: none;
+}
+
+label[class="C"] {
+  content:"";
+  margin-left: -10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 0;
+  height: 90%;
+  width: 50%;
+  background-color: white;
+  position: absolute;
+  top: 25%;
+  left: -20%;
+  transition: 1s;
+  font-size: 100%;
+}
+
+input[id="Contact"]:checked + label[class="C"] {
+  transform: translateX(50%);
+}
+
+input[id="Contact"] {
+  display: none;
+}
